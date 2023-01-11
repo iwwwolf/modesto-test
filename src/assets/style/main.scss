@@ -33,8 +33,19 @@ a {
   padding: 0 $indent-default;
 }
 
+h1 {
+  font-family: $font-family-title;
+  font-size: 24px;
+  margin: 0;
+
+  @media (min-width: $bp-tablet){
+    font-size: 56px;
+  }
+}
+
 @import "./components/button";
 @import "./components/buttons-block";
 
 @import "./components/header";
 @import "./components/mobile-navigation";
+@import "./components/intro";

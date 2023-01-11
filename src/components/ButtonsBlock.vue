@@ -1,12 +1,19 @@
 <template>
   <div class="buttons-block">
-    <a class="button buttons-block__login-button" href="#">Войти</a>
-    <a class="button button_transparent buttons-block__registration-button" href="#">Создать аккаунт</a>
+    <slot>
+      <ButtonComponent variant="link">Войти</ButtonComponent>
+      <ButtonComponent class="buttons-block__registration-button">Создать аккаунт</ButtonComponent>
+    </slot>
   </div>
 </template>
 
 <script>
+import ButtonComponent from '@/components/ButtonComponent.vue';
+
 export default {
-  name: "ButtonsBlock"
+  name: "ButtonsBlock",
+  components: {
+    ButtonComponent,
+  }
 }
 </script>

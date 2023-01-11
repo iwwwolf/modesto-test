@@ -1,30 +1,60 @@
 @import "../variables.scss";
 
+button,
 .button {
+  background-color: transparent;
+  border: $button-transparent-border;
+  outline: none;
   font-family: $font-family-main;
   font-weight: 500;
+  font-size: $font-size-mobile;
+  border-radius: $radius-base;
+  padding: 13px 32px;
+  line-height: 1.25;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
 
+  @media (min-width: $bp-tablet) {
+    font-size: $font-size-desktop;
+  }
+}
+
+.button {
   // Variants
 
-  &_primary,
-  &_secondary,
-  &_transparent {
-    border-radius: $radius-base;
-    padding: 13px 32px;
-    line-height: 1.25;
+  &_link {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
   }
 
-  &_primary {}
+  &_primary,
+  &_secondary {
+    border: 0;
+  }
 
-  &_secondary {}
+  &_primary {
+    background-color: $button-primary-background;
 
-  &_transparent {
-    background-color: transparent;
-    border: $button-transparent-border;
+    &:hover {
+      background-color: $button-primary-background-hover;
+    }
+  }
+
+  &_secondary {
+    background-color: $button-secondary-background;
+
+    &:hover {
+      background-color: $button-secondary-background-hover;
+    }
   }
 
   // Sizes
 
-  &_large {}
+  &_large {
+    padding: 22px 34px;
+  }
 }

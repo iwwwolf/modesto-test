@@ -15,7 +15,6 @@
       </div>
       <ButtonsBlock class="header__buttons" />
       <a
-        href="#"
         class="header__burger-link"
         @click="navigationIsOpen = !navigationIsOpen"
         :class="{ 'is-active': navigationIsOpen}"
@@ -37,9 +36,9 @@
 </template>
 
 <script>
-import MobileNavigation from './MobileNavigation.vue';
-import NavigationMenu from './NavigationMenu.vue';
-import ButtonsBlock from './ButtonsBlock.vue';
+import MobileNavigation from '@/components/MobileNavigation.vue';
+import NavigationMenu from '@/components/NavigationMenu.vue';
+import ButtonsBlock from '@/components/ButtonsBlock.vue';
 
 export default {
   name: "PageHeader",

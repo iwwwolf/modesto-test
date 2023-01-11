@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import NavigationMenu from './NavigationMenu.vue';
-import ButtonsBlock from './ButtonsBlock.vue';
+import NavigationMenu from '@/components/NavigationMenu.vue';
+import ButtonsBlock from '@/components/ButtonsBlock.vue';
 
 export default {
   name: "MobileNavigation",

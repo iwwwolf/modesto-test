@@ -35,6 +35,10 @@ $navigation-border: 1px solid rgba($color-dark, 0.15);
     }
   }
 
+  @media (min-width: $bp-tablet) {
+    padding-top: 110px;
+  }
+
   @media (min-width: $bp-desktop) {
     display: none;
   }

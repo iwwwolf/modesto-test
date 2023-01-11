@@ -1,70 +1,19 @@
 <template>
-<!--  <img alt="Vue logo" src="./assets/logo.png">-->
   <PageHeader/>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-<!--  <ToDoList msg="Welcome to Your Vue.js App"/>-->
+  <IntroSection />
 </template>
 
 <script>
-import PageHeader from './components/PageHeader.vue';
 import "./assets/style/main.scss";
+
+import PageHeader from './components/PageHeader.vue';
+import IntroSection from './components/IntroSection.vue';
 
 export default {
   name: 'App',
   components: {
-    PageHeader
+    PageHeader,
+    IntroSection
   }
 }
 </script>
