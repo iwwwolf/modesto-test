@@ -1,0 +1,39 @@
+$color-black: #000;
+$color-white: #FFFBED;
+$color-gray: #EDEDED;
+$color-disabled: #9B9B99;
+$color-dark: #372E11;
+$color-help: #8E825C;
+$color-primary: #FFE182;
+$color-primary-light: #FFF8E1;
+
+$page-background-color: $color-white;
+
+$font-family-main: 'Raleway', sans-serif;
+$font-family-title: 'Marmelad', sans-serif;
+$font-family-help: 'Roboto', sans-serif;
+
+$font-color-main: $color-dark;
+
+$font-size-mobile: 16px;
+$font-size-desktop: 18px;
+//$font-size-desktop: 20px;
+
+$bp-smaller: 480px;
+$bp-small: 640px;
+$bp-tablet: 768px;
+$bp-medium: 980px;
+$bp-desktop: 1200px;
+
+$button-text-color: $font-color-main;
+$button-secondary-background: $color-gray;
+$button-secondary-background-hover: darken($color-gray, 3%);
+$button-primary-background: $color-primary;
+$button-primary-background-hover: darken($color-primary, 3%);
+$button-transparent-border: 1px solid $button-text-color;
+
+$radius-base: 12px;
+
+$indent-small: 8px;
+$indent-default: 20px;
+//$indent-large: 20px;

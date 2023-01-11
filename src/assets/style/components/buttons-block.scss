@@ -1,0 +1,7 @@
+@import "../variables.scss";
+
+.buttons-block {
+  display: flex;
+  gap: $indent-default;
+  align-items: center;
+}

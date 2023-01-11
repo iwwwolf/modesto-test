@@ -1,0 +1,55 @@
+<template>
+  <header class="header">
+    <div class="main-container header__container">
+      <div class="header__logo">
+        <svg width="52" height="40" viewBox="0 0 52 40" fill="none">
+          <path d="M31.2565 25.8612C30.9903 22.613 26.664 17.4056 25.6139 16.1651C21.2028 10.9606 9.11896 1.29588 7.11231 0.508789C6.5536 1.33296 6.00952 7.83218 6.23476 14.2173C3.70158 13.5215 1.82363 13.647 0.185547 14.1175C4.31878 17.0149 5.34844 18.341 8.04835 25.5532C10.7483 32.7653 17.7657 38.101 19.9391 39.2931C19.9391 39.2931 14.7586 34.2882 12.9743 29.2377C11.0291 23.7309 11.4971 10.8636 11.4971 10.8636C11.4971 10.8636 18.8948 16.6242 20.957 19.0226C20.957 19.0226 24.4994 22.8411 25.3799 24.3697C26.5295 26.3403 27.2958 28.077 26.936 29.6312C26.2691 32.6684 22.952 31.9326 26.1697 32.1722C29.1124 32.1693 31.6631 30.5524 31.2565 25.8612Z" fill="#F36769"/>
+          <path d="M20.7494 25.8612C21.0185 22.613 25.3448 17.4056 26.392 16.1651C30.8032 10.9606 42.8928 1.29588 44.8995 0.508789C45.4582 1.33296 45.9818 7.83218 45.7595 14.2173C48.2956 13.5215 50.1706 13.647 51.8145 14.1175C47.6813 17.0149 46.6487 18.341 43.9517 25.556C41.2547 32.771 34.2344 38.1039 32.0522 39.2931C32.0522 39.2931 37.2327 34.2882 39.017 29.2377C40.9622 23.7309 40.4942 10.8636 40.4942 10.8636C40.4942 10.8636 33.1023 16.6242 31.043 19.0226C31.043 19.0226 27.5007 22.8411 26.6202 24.3697C25.4706 26.3403 24.7042 28.077 25.064 29.6312C25.1505 30.172 25.3818 30.6809 25.7347 31.1065C26.0875 31.5322 26.5494 31.8594 27.0736 32.0552L27.2081 32.1009C26.749 32.1641 26.2851 32.1889 25.8216 32.175C22.8906 32.1693 20.3574 30.5524 20.7494 25.8612Z" fill="#F36769"/>
+        </svg>
+      </div>
+      <NavigationMenu class="header__navigation"/>
+      <div class="header__phone">+3 67 8754 7894</div>
+      <div class="header__languages">
+        <a href="#" class="is-active">Ru</a>
+        <a href="#">Eng</a>
+      </div>
+      <ButtonsBlock class="header__buttons" />
+      <a
+        href="#"
+        class="header__burger-link"
+        @click="navigationIsOpen = !navigationIsOpen"
+        :class="{ 'is-active': navigationIsOpen}"
+      >
+        <svg class="header__navigation-is-close" width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M6.25 8.75H23.75" stroke="#372E11" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6.25 15H18.75" stroke="#372E11" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6.25 21.25H13.75" stroke="#372E11" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+
+        <svg class="header__navigation-is-open" width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M6.25 6.25L23.7509 23.7509" stroke="#372E11" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6.25 23.7509L23.7509 6.24999" stroke="#372E11" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+    <MobileNavigation :navigationIsOpen=navigationIsOpen />
+  </header>
+</template>
+
+<script>
+import MobileNavigation from './MobileNavigation.vue';
+import NavigationMenu from './NavigationMenu.vue';
+import ButtonsBlock from './ButtonsBlock.vue';
+
+export default {
+  name: "PageHeader",
+  data() {
+    return { navigationIsOpen: false }
+  },
+  components: {
+    MobileNavigation,
+    NavigationMenu,
+    ButtonsBlock
+  }
+}
+</script>
