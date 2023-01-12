@@ -21,6 +21,10 @@
       flex-basis: 100%;
     }
   }
+
+  label {
+    cursor: pointer;
+  }
 }
 
 .form__button-back {

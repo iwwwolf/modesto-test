@@ -27,7 +27,7 @@
         </ButtonsBlock>
       </FormItem>
       <FormItem class="form__agreement">
-        <CheckboxInput name="agreement" id="agreeInput">
+        <CheckboxInput name="agreement" id="agreeInput" checked>
           Я даю согласие на обработку моих персональных данных и правовых документов
         </CheckboxInput>
       </FormItem>

@@ -1,5 +1,5 @@
 <template>
-  <component :is="href ? 'a' : 'button'" @click.prevent="scrollTo && scroll(scrollTo)" :class="[
+  <component :is="href ? 'a' : 'button'" :href="href" @click="scrollTo && scroll(scrollTo)" :class="[
               'button',
               (variant ? 'button_' + variant : false),
               (size ? 'button_' + size : false)
