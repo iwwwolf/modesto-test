@@ -31,6 +31,8 @@
   gap: $indent-large;
   max-width: 688px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 
   @media (min-width: $bp-tablet) {
     padding: $indent-large;
@@ -53,5 +55,28 @@
 
   & > * {
     margin: 0;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-bottom: 180px;
+  }
+}
+
+.form-section__flower {
+  display: none;
+  width: 564px;
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+  transform: translateY(55%);
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $bp-desktop) {
+    display: block;
   }
 }

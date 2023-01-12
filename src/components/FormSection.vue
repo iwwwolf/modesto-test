@@ -11,6 +11,9 @@
           </p>
         </div>
         <RegistrationForm />
+        <div class="form-section__flower">
+          <img src="../assets/images/flower.png" alt="">
+        </div>
       </div>
     </div>
   </section>

@@ -25,8 +25,8 @@ button,
 }
 
 .button {
-  // Variants
 
+  // Variants
   &_link {
     background-color: transparent;
     padding: 0;
@@ -62,7 +62,8 @@ button,
 }
 
 .button__icon {
-  display: block;
+  display: flex;
+  align-items: center;
 
   path {
     fill: currentColor;

@@ -60,18 +60,6 @@ export default {
     goToStep: function(step) {
       this.currentStep = step;
     }
-    // validateStep(stepIndex){
-    //   //run validation of step
-    //   //if step is valid then
-    //   this.steps[stepIndex].step_valid=true;
-    //   console.log(this.steps[stepIndex])
-    //   this.$refs.FormComponent.submitStep();
-    //   //else show errors
-    // },
-    // submitForm(){
-    //   //api call to submit all data via post request
-    //   //redirect to somewhere
-    // }
   }
 }
 </script>

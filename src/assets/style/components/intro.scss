@@ -1,7 +1,9 @@
 @import "../variables.scss";
 
 .intro {
+  position: relative;
   font-weight: 300;
+  overflow: hidden;
 
   @media (min-width: $bp-tablet) {
     font-size: 26px;
@@ -37,5 +39,173 @@
 
   & > * {
     margin: 0;
+  }
+}
+
+.intro {
+  perspective: 300px;
+  perspective-origin: center center;
+  overflow-x:hidden;
+}
+
+.intro__flowers-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro__flower {
+  position: absolute;
+  z-index: -1;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.intro__flower_1 {
+  width: 100px;
+  top: 40px;
+  left: -5%;
+
+  @media (min-width: $bp-tablet) {
+    width: 140px;
+    top: 1%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 36.4%;
+    top: 4%;
+    right: 84%;
+    left: auto;
+  }
+}
+
+.intro__flower_2 {
+  width: 18px;
+  top: 30px;
+  left: 40%;
+  transform: rotate(180deg);
+
+  @media (min-width: $bp-tablet) {
+    width: 40px;
+    top: 46%;
+    left: -1%;
+  }
+  @media (min-width: $bp-desktop) {
+    width: 40px;
+    top: 2%;
+    left: 21%;
+  }
+}
+
+.intro__flower_3 {
+  width: 42px;
+  top: 5px;
+  right: 8%;
+  transform: rotate(180deg);
+
+  @media (min-width: $bp-tablet) {
+    width: 68px;
+    right: 1%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 102px;
+    top: 8%;
+    right: 1%;
+  }
+}
+
+.intro__flower_4 {
+  width: 42px;
+  bottom: 5%;
+  left: 8%;
+  transform: rotate(180deg);
+
+  @media (min-width: $bp-tablet) {
+    width: 102px;
+    left: 8%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 8.75%;
+    left: auto;
+    right: 70%;
+    bottom: 2%;
+  }
+}
+
+.intro__flower_5 {
+  width: 122px;
+  bottom: -8%;
+  right: 24%;
+
+  @media (min-width: $bp-tablet) {
+    width: 26px;
+    bottom: 8%;
+    right: 49%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 44px;
+    bottom: 3%;
+    right: 47%;
+  }
+}
+
+.intro__flower_6 {
+  width: 24px;
+  bottom: 5%;
+  right: 1%;
+  transform: rotate(180deg);
+
+  @media (min-width: $bp-tablet) {
+    width: 246px;
+    bottom: -7%;
+    right: -12%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 30.7%;
+    bottom: -36%;
+    right: -4%;
+  }
+}
+
+.intro__flower_7 {
+  display: none;
+
+  @media (min-width: $bp-tablet) {
+    display: block;
+    width: 38px;
+    top: 35%;
+    right: 4%;
+  }
+}
+
+.intro__flower_8 {
+  display: none;
+
+  @media (min-width: $bp-desktop) {
+    display: block;
+    width: 62px;
+    top: 0;
+    right: 44%;
+  }
+}
+
+.intro__flower_9 {
+  display: none;
+
+  @media (min-width: $bp-desktop) {
+    display: block;
+    width: 60px;
+    top: 48%;
+    left: 80%;
   }
 }

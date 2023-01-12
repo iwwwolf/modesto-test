@@ -10,6 +10,35 @@
         </ButtonsBlock>
       </div>
     </div>
+    <div class="intro__flowers-block">
+      <div class="intro__flower intro__flower_1">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_2">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_3">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_4">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_5">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_6">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_7">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_8">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+      <div class="intro__flower intro__flower_9">
+        <img src="../assets/images/flower.png" alt="">
+      </div>
+    </div>
   </section>
 </template>
 

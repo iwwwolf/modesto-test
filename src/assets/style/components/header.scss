@@ -5,9 +5,8 @@
   padding-top: $indent-small;
   padding-bottom: $indent-small;
   font-size: $font-size-mobile;
-  background-color: $page-background-color;
-  left: 0;
-  top: 0;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $bp-tablet) {
     padding-top: $indent-default;
