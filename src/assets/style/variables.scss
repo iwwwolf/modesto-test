@@ -10,6 +10,7 @@ $color-primary-light: #FFF8E1;
 $color-error: #FF8282;
 $color-checked: #0E493F;
 
+$color-copyright: #B9B3B3;
 $page-background-color: $color-white;
 
 // Fonts
@@ -23,6 +24,7 @@ $font-size-small: 12px;
 $font-size-help: 14px;
 $font-size-mobile: 16px;
 $font-size-desktop: 18px;
+$font-size-large: 20px;
 
 // Breakpoints
 $bp-smaller: 480px;
@@ -48,6 +50,9 @@ $indent-default: 20px;
 $indent-large: 32px;
 $indent-extra-large: 50px;
 $indent-desktop-large: 80px;
+
+$indent-footer-default: 16px;
+$indent-footer-large: 48px;
 
 // Inputs settings
 $text-input-background-color: $color-primary-light;

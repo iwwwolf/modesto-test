@@ -1,0 +1,71 @@
+@import "../variables.scss";
+
+.footer {
+  color: $color-white;
+  background-color: $color-dark;
+  padding: $indent-large 0;
+  font-size: $font-size-large;
+  font-weight: 500;
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: $indent-footer-large;
+  }
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: $indent-footer-large;
+
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer__column {
+  @media (min-width: $bp-tablet) and (max-width: $bp-medium - 1){
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $indent-footer-default;
+
+  li {
+    display: block;
+  }
+}
+
+.footer__offices {
+  font-size: $font-size-desktop;
+  display: flex;
+  flex-direction: column;
+  gap: $indent-footer-default;
+
+  @media (min-width: $bp-desktop) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+
+.footer__copyright {
+  color: $color-copyright;
+  font-weight: 400;
+  font-size: $font-size-small;
+}

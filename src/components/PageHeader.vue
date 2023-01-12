@@ -8,7 +8,9 @@
         </svg>
       </div>
       <NavigationMenu class="header__navigation"/>
-      <div class="header__phone">+3 67 8754 7894</div>
+      <div class="header__phone">
+        <a href="tel:+36787547894">+3 67 8754 7894</a>
+      </div>
       <div class="header__languages">
         <a href="#" class="is-active">Ru</a>
         <a href="#">Eng</a>

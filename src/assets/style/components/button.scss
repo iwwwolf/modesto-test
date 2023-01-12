@@ -6,14 +6,16 @@ button,
   border: $button-transparent-border;
   outline: none;
   font-family: $font-family-main;
-  font-weight: 500;
+  font-weight: 600;
   font-size: $font-size-mobile;
+  color: $button-text-color;
   border-radius: $radius-base;
   padding: 13px 32px;
   line-height: 1.25;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
   cursor: pointer;
   transition: all $transition-default;
 
@@ -56,5 +58,13 @@ button,
 
   &_large {
     padding: 22px 34px;
+  }
+}
+
+.button__icon {
+  display: block;
+
+  path {
+    fill: currentColor;
   }
 }
