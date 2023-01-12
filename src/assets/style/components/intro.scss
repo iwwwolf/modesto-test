@@ -7,10 +7,6 @@
     font-size: 26px;
   }
 
-  p {
-    margin: 0;
-  }
-
   @media (max-width: $bp-tablet - 1) {
     .buttons-block {
       gap: $indent-small;
@@ -37,5 +33,9 @@
   @media (min-width: $bp-tablet) {
     min-height: calc(100vh - 110px);
     gap: 40px
+  }
+
+  & > * {
+    margin: 0;
   }
 }

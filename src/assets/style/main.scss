@@ -33,19 +33,34 @@ a {
   padding: 0 $indent-default;
 }
 
-h1 {
+h1,
+h2 {
   font-family: $font-family-title;
+}
+
+h1 {
   font-size: 24px;
-  margin: 0;
 
   @media (min-width: $bp-tablet){
     font-size: 56px;
   }
 }
 
+h2 {
+  font-size: 24px;
+
+  @media (min-width: $bp-tablet){
+    font-size: 36px;
+  }
+}
+
 @import "./components/button";
 @import "./components/buttons-block";
+@import "./components/text-input";
+@import "./components/checkbox";
+@import "./components/form";
 
 @import "./components/header";
 @import "./components/mobile-navigation";
 @import "./components/intro";
+@import "./components/form-section";

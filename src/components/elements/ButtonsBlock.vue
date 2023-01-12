@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ButtonComponent from '@/components/ButtonComponent.vue';
+import ButtonComponent from '@/components/elements/ButtonComponent.vue';
 
 export default {
   name: "ButtonsBlock",

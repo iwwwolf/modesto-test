@@ -1,0 +1,77 @@
+@import "../variables.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: $indent-default;
+
+  @include only-tablet {
+    display: grid;
+    gap: $indent-default;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .buttons-block {
+    gap: $indent-small;
+    padding-top: $indent-default;
+
+    .button {
+      padding-left: $indent-small;
+      padding-right: $indent-small;
+      flex-basis: 100%;
+    }
+  }
+}
+
+.form__button-back {
+  flex-shrink: 2;
+}
+
+.form__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &_valign-bottom {
+    align-self: end;
+  }
+}
+
+.form__label {
+  font-size: $font-size-help;
+  font-weight: 500;
+}
+
+.form__item_with-captcha {
+  .form__input-block {
+    display: flex;
+    flex-direction: column;
+    gap: $indent-default;
+
+    @include bp-for-captcha {
+      flex-direction: row;
+      gap: $indent-small;
+    }
+
+  }
+}
+
+.form__captcha {
+  @include bp-for-captcha{
+    flex-basis: 118px;
+    flex-shrink: 0;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    width: auto;
+  }
+}
+
+.form__agreement  {
+  @include only-tablet {
+    grid-column: span 2;
+  }
+}

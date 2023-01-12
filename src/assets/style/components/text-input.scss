@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.text-input {
+  width: 100%;
+  height: $text-input-height;
+  border: 0;
+  background-color: $text-input-background-color;
+  color: $text-input-color;
+  border-radius: $radius-small;
+  padding: $text-input-padding;
+  outline: 1px solid transparent;
+  transition: outline-color $transition-default;
+
+  &:focus {
+    outline-color: $text-input-color;
+  }
+
+  &::placeholder {
+    color: rgba($text-input-color, 0.5);
+  }
+}

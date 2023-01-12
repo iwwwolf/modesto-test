@@ -1,3 +1,4 @@
+// Colors
 $color-black: #000;
 $color-white: #FFFBED;
 $color-gray: #EDEDED;
@@ -6,25 +7,31 @@ $color-dark: #372E11;
 $color-help: #8E825C;
 $color-primary: #FFE182;
 $color-primary-light: #FFF8E1;
+$color-error: #FF8282;
+$color-checked: #0E493F;
 
 $page-background-color: $color-white;
 
+// Fonts
 $font-family-main: 'Raleway', sans-serif;
 $font-family-title: 'Marmelad', sans-serif;
 $font-family-help: 'Roboto', sans-serif;
 
 $font-color-main: $color-dark;
 
+$font-size-small: 12px;
+$font-size-help: 14px;
 $font-size-mobile: 16px;
 $font-size-desktop: 18px;
-//$font-size-desktop: 20px;
 
+// Breakpoints
 $bp-smaller: 480px;
 $bp-small: 640px;
 $bp-tablet: 768px;
 $bp-medium: 980px;
 $bp-desktop: 1200px;
 
+// Buttons settings
 $button-text-color: $font-color-main;
 $button-secondary-background: $color-gray;
 $button-secondary-background-hover: darken($color-gray, 3%);
@@ -32,8 +39,46 @@ $button-primary-background: $color-primary;
 $button-primary-background-hover: darken($color-primary, 3%);
 $button-transparent-border: 1px solid $button-text-color;
 
+$radius-small: 6px;
 $radius-base: 12px;
 
+// indent sizes
 $indent-small: 8px;
 $indent-default: 20px;
-//$indent-large: 20px;
+$indent-large: 32px;
+$indent-extra-large: 50px;
+$indent-desktop-large: 80px;
+
+// Inputs settings
+$text-input-background-color: $color-primary-light;
+$text-input-color: $color-help;
+$text-input-padding: $indent-small;
+$text-input-height: 48px;
+
+$transition-default: 0.2s ease;
+
+// Retina display mixin
+@mixin retina($density: 2) {
+  @media only screen and (-webkit-min-device-pixel-ratio: $density),
+  only screen and (min--moz-device-pixel-ratio: $density),
+  only screen and (-o-min-device-pixel-ratio: #{$density}/1),
+  only screen and (min-device-pixel-ratio: $density),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: $density dppx) {
+    @content;
+  }
+}
+
+// Only tablet mixin
+@mixin only-tablet {
+  @media (min-width: $bp-small) and (max-width: $bp-desktop - 1) {
+    @content;
+  }
+}
+
+// Mixin for captcha
+@mixin bp-for-captcha {
+  @media (min-width: $bp-smaller) and (max-width: $bp-desktop - 1) {
+    @content;
+  }
+}

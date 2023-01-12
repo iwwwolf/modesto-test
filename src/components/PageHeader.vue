@@ -38,7 +38,7 @@
 <script>
 import MobileNavigation from '@/components/MobileNavigation.vue';
 import NavigationMenu from '@/components/NavigationMenu.vue';
-import ButtonsBlock from '@/components/ButtonsBlock.vue';
+import ButtonsBlock from '@/components/elements/ButtonsBlock.vue';
 
 export default {
   name: "PageHeader",

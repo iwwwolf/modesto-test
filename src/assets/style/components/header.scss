@@ -130,7 +130,7 @@
 .header__navigation-is-close,
 .header__navigation-is-open {
   display: block;
-  transition: opacity 0.2s linear;
+  transition: opacity $transition-default;
 }
 
 .header__navigation-is-close {

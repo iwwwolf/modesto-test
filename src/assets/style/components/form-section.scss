@@ -1,0 +1,57 @@
+@import "../variables.scss";
+
+.form-section {
+  padding: $indent-default 0;
+  background-image: url("/src/assets/images/form-bg.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("/src/assets/images/form-bg@2x.jpg");
+  }
+
+  @media (min-width: $bp-tablet) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: $bp-desktop) {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: $indent-extra-large 0;
+  }
+}
+
+.form-section__content {
+  background-color: $page-background-color;
+  padding: $indent-default;
+  display: flex;
+  flex-direction: column;
+  gap: $indent-large;
+  max-width: 688px;
+  margin: 0 auto;
+
+  @media (min-width: $bp-tablet) {
+    padding: $indent-large;
+    gap: $indent-extra-large;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $indent-desktop-large;
+    padding: $indent-desktop-large;
+  }
+}
+
+.form-section__text {
+  display: flex;
+  flex-direction: column;
+  gap: $indent-large;
+
+  & > * {
+    margin: 0;
+  }
+}

@@ -15,7 +15,7 @@ button,
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: all $transition-default;
 
   @media (min-width: $bp-tablet) {
     font-size: $font-size-desktop;

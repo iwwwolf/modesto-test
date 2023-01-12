@@ -1,5 +1,5 @@
 <template>
-  <button :class="[
+  <button @click.prevent="scrollTo && scroll(scrollTo)" :class="[
               'button',
               (variant ? 'button_' + variant : false),
               (size ? 'button_' + size : false)
@@ -13,7 +13,14 @@ export default {
   name: "ButtonComponent",
   props: {
     variant: String,
-    size: String
+    size: String,
+    scrollTo: String
+  },
+  methods: {
+    scroll(selector) {
+      document.querySelector(selector)
+          .scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
 </script>

@@ -9,7 +9,7 @@
 
 <script>
 import NavigationMenu from '@/components/NavigationMenu.vue';
-import ButtonsBlock from '@/components/ButtonsBlock.vue';
+import ButtonsBlock from '@/components/elements/ButtonsBlock.vue';
 
 export default {
   name: "MobileNavigation",
