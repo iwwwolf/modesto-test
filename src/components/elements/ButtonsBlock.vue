@@ -1,7 +1,7 @@
 <template>
   <div class="buttons-block">
     <slot>
-      <ButtonComponent variant="link">Войти</ButtonComponent>
+      <ButtonComponent class="buttons-block__login-button" variant="link">Войти</ButtonComponent>
       <ButtonComponent class="buttons-block__registration-button">Создать аккаунт</ButtonComponent>
     </slot>
   </div>

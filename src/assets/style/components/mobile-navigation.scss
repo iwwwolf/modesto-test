@@ -1,16 +1,17 @@
 @import "../variables.scss";
 
 $show-settings: 0.3s ease;
-$navigation-border: 1px solid rgba($color-dark, 0.15);
+$navigation-border-color: #e1ddcc;
+$navigation-border: 1px solid $navigation-border-color;
 
 .mobile-navigation {
-  width: 100%;
-  height: 100%;
-  padding: 60px $indent-default $indent-default;
+  padding: $indent-default;
   background-color: $page-background-color;
-  position: fixed;
-  top: 0;
-  right: 0;
+  border: $navigation-border;
+  border-radius: $radius-base;
+  position: absolute;
+  top: 100%;
+  right: $indent-small;
   opacity: 0;
   visibility: hidden;
   transition:
@@ -22,25 +23,41 @@ $navigation-border: 1px solid rgba($color-dark, 0.15);
     opacity: 1;
   }
 
-  @media (min-width: $bp-small) {
-    max-width: 360px;
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(100%);
-    transition: transform $show-settings;
-    border-left: $navigation-border;
-
-    &.is-active {
-      transform: translateX(0);
-    }
+  &::before,
+  &::after {
+    display: block;
+    width: 0;
+    border-style: none solid solid;
+    position: absolute;
+    content: "";
   }
 
-  @media (min-width: $bp-tablet) {
-    padding-top: 110px;
+  &::before {
+    border-width: 0 6px 6px;
+    border-color: transparent transparent $navigation-border-color;
+    top: -6px;
+    right: $indent-default;
+  }
+
+  &::after {
+    border-width: 0 5px 5px;
+    border-color: transparent transparent $page-background-color;
+    top: -5px;
+    right: $indent-default + 1;
+  }
+
+  @media (min-width: $bp-small) {
+    max-width: 360px;
   }
 
   @media (min-width: $bp-desktop) {
     display: none;
+  }
+
+  .buttons-block__login-button {
+    @media (min-width: $bp-small) {
+      display: none;
+    }
   }
 }
 
@@ -52,11 +69,7 @@ $navigation-border: 1px solid rgba($color-dark, 0.15);
 
   li {
     display: block;
-    border-top: $navigation-border;
-
-    &:last-child {
-      border-bottom: $navigation-border;
-    }
+    border-bottom: $navigation-border;
   }
 
   a {

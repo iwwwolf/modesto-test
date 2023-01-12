@@ -6,12 +6,8 @@
   padding-bottom: $indent-small;
   font-size: $font-size-mobile;
   background-color: $page-background-color;
-  position: sticky;
   left: 0;
   top: 0;
-  z-index: 1;
-
-  //box-shadow: 0 1px 10px rgba($color-dark, 0.05);
 
   @media (min-width: $bp-tablet) {
     padding-top: $indent-default;
@@ -25,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   gap: $indent-small;
+  position: relative;
 
   @media (min-width: $bp-small) {
     gap: $indent-default;

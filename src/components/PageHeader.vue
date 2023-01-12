@@ -32,8 +32,8 @@
           <path d="M6.25 23.7509L23.7509 6.24999" stroke="#372E11" stroke-width="2" stroke-linecap="round"/>
         </svg>
       </a>
+      <MobileNavigation :navigationIsOpen=navigationIsOpen />
     </div>
-    <MobileNavigation :navigationIsOpen=navigationIsOpen />
   </header>
 </template>
 
